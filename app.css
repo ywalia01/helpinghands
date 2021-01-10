@@ -10,7 +10,7 @@ html {
 }
 
 body {
-    background-image: url("./img/Main_back.png");
+    background-image: url("./img/Bg.png");
     /* background: center center no-repeat; */
     top: 0;
     left: 0;
@@ -32,7 +32,7 @@ nav {
 a {
     text-decoration: none;
     opacity: 0.75;
-    color: black;
+    color: white;
 }
 
 a:hover {
@@ -46,13 +46,14 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 35px 100px 0;
+    padding: 35px 100px 25px;
     animation: 1s fadein 0.5 forwards;
     opacity: 0;
     color: black;
+    background-color: black;
 }
 .nav-items a:hover {
-    color: black;
+    color: white;
 }
 @keyframes fadein {
     100% {
@@ -85,10 +86,29 @@ header nav li {
     min-height: 93vh;
 }
 .form {
-    padding: 20px;
+    padding-bottom: 150px;
 }
+#selectState{
+    width: 150%;
+    padding: 16px 25px;
+    border: none;
+    border-radius: 4px;
+    background-color: lightslategray;
+    color: white;
+}
+
+#selectCounty{
+    width: 150%;
+    margin-top: 20px;
+    padding: 16px 25px;
+    border: none;
+    border-radius: 4px;
+    background-color: lightslategray;
+    color: white;
+}
+
 #mapid {
-    height: 350px;
+    height: 400px;
     width: 970px;
 }
 
