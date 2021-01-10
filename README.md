@@ -1,1 +1,1 @@
-# nwhacks
+# HELPING HANDS :)
