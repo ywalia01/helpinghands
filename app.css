@@ -75,8 +75,12 @@ header nav li {
     justify-content: center;
     height: 50%;
     width: 100%;
-    /* position: relative; */
-    /* min-height: 100vh; */
+    position: relative;
+    min-height: 100vh;
     color: black;
-    background-color: #80a3db;
+    /* background-color: #80a3db; */
+}
+
+#mapid {
+    height: 180px;
 }
