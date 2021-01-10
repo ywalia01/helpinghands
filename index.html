@@ -1,42 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Helping Hands</title>
     <link rel="stylesheet" href="./index.css">
-    <link rel="icon" href="./img/logo3.png" />
-    <script src="https://use.fontawesome.com/418cf11781.js"></script>
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+        integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+        crossorigin="" />
+
+    <!-- Make sure you put this AFTER Leaflet's CSS -->
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+        integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+        crossorigin=""></script>
 </head>
-
 <body>
+    <header>
+        <h2><a href="#">HELPING HANDS</a></h2>
+        <nav class="nav-items">
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">MLH</a></li>
+        </nav>
+    </header>
     <div class="container">
-        <div>
-            <img style="position: absolute; max-width: 100%; left: 0px; top: 0px; z-index: -1;" src="./img/Grid BG.svg"
-                alt="">
-        </div>
-        <div>
-            <img id="logo" src="./img/logo3.png" alt="">
-        </div>
-        <div>
-            <p>An on-the-go web app for helping someone in need</p>
-            <!-- <p>Supported Languages: English, Chinese, Hindi, Spanish</p> -->
-        </div>
-        <div>
-            <button>
-                <a href="https://devpost.com/software/iheard">Devpost</a>
-            </button>
-            <button>
-                <a href="app.html">Get Started</a>
-            </button>
-            <button>
-                <a href="https://github.com/ywalia01/helpinghands"><i class="fa fa-lg fa-github"></i></a>
-            </button>
-        </div>
+        <div class="form">
+            <select name="" id="selectState">
+                <option value="" selected disabled hidden>SELECT STATE</option>
+                <option value="">Alabama</option>
+                <option value="">Arkansas</option>
+                <option value="">California</option>
+                <option value="">New York</option>
+                <option value="">Ohio</option>
+                <option value="">Gerogia</option>
+                <option value="">Indiana</option>
+                <option value="">Maine</option>
+                <option value="">Kansas</option>
+                <option value="">Texas</option>
+                <option value="">Michigan</option>
+                <option value="">Wisconsin</option>
+            </select>
 
+            <select name="" id="selectCounty">
+                <option value="" selected disabled hidden>SELECT COUNTY</option>
+                <option value="">Alabama</option>
+            </select>
+        </div>
+        
+        <div id="mapid">
+        </div>
     </div>
+    
 
+    <script src="./index.js"></script>
 </body>
-
 </html>
