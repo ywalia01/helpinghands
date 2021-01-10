@@ -7,8 +7,8 @@
 
 html,
 body {
-    background: #1d3354 center center no-repeat;
-    opacity: 0.879;
+    background: #8380b6 center center no-repeat;
+    opacity: 0.8;
     background-size: cover;
     display: flex;
     overflow: hidden;
@@ -54,7 +54,7 @@ a {
 }
 
 p {
-    color: #9ed8db;
+    color: #102e4a;
     font-size: xx-large;
 }
 
