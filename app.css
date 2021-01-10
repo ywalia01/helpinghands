@@ -36,7 +36,9 @@ header {
     opacity: 0;
     color: black;
 }
-
+.nav-items a:hover{
+    color: black;
+}
 @keyframes fadein {
     100% {
         opacity: 1;
@@ -67,9 +69,12 @@ header nav li {
     width: 100%;
     min-height: 93vh;
 }
+.form{
+    padding : 20px;
 
+}
 #mapid {
-    height: 450px;
+    height: 350px;
     width: 970px;
 }
 
